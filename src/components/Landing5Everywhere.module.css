@@ -47,7 +47,7 @@
 @media (min-width: 1400px) {
   .everywhereDiv1 {
     margin-top: 0px;
-    padding:10px 80px;
+    padding: 10px 80px;
   }
   /*左*/
   .introdictionEverywhereDiv2Left h1 {
@@ -170,8 +170,29 @@
     font-size: 1.2rem;
   }
   /*右*/
+}
+
+@media (max-width: 390px) {
+  .everywhereDiv1 {
+    padding: 46px 50px 11px;
+  }
+  /*右*/
+  .devicesDiv2Right {
+    padding-top: 0px;
+
+    margin-top: 0px;
+  }
+
   .landing5Video3 {
-   margin-bottom: 30%;
-   height: 200px;
+    width: 295px;
+    height: 120px;
+    margin-bottom: 0px;
+  }
+
+  .devicesImg3 {
+    width: 330px;
+    height: 270px;
+    margin-top: 80px;
+    margin-bottom: 0px;
   }
 }
