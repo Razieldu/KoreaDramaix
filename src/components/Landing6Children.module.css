@@ -1,0 +1,96 @@
+.landing6Div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 84px 80px;
+  border-bottom: 8px solid grey;
+}
+/*左*/
+.childrenPhoto {
+  width: 480px;
+  height: 320px;
+}
+/*右*/
+.landing6IntroductionDiv2 h1 {
+  color: white;
+  font-size: 3rem;
+}
+.landing6IntroductionDiv2 h2 {
+  color: white;
+}
+
+@media (min-width: 1400px) {
+  .landing6Div1 {
+    padding: 74px 80px;
+  }
+  /*左*/
+  .childrenPhoto {
+    width: 800px;
+    height: 640px;
+  }
+  /*右*/
+  .landing6IntroductionDiv2 h1 {
+    font-size: 70px;
+  }
+  .landing6IntroductionDiv2 h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .landing6Div1 {
+    padding: 109px 80px;
+  }
+  /*右*/
+  .landing6IntroductionDiv2 h1 {
+    font-size: 2.5rem;
+  }
+  .landing6IntroductionDiv2 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .landing6Div1 {
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    padding: 64px 80px 63px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing6Div1 {
+    padding: 38px 45px 39px;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing6Div1 {
+    padding: 38px 50px;
+  }
+  /*右*/
+  .landing6IntroductionDiv2 h1 {
+    font-size: 2rem;
+  }
+  .landing6IntroductionDiv2 h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .landing6Div1 {
+    padding: 76px 50px;
+  }
+  /*左*/
+  .childrenPhoto {
+    width: 360px;
+    height: 240px;
+  }
+  /*右*/
+  .landing6IntroductionDiv2 h1 {
+    font-size: 1.5rem;
+  }
+  .landing6IntroductionDiv2 h2 {
+    font-size: 1.2rem;
+  }
+}

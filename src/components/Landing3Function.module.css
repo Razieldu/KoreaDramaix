@@ -1,0 +1,170 @@
+.wrapperDiv {
+  padding-top: 101px;
+  padding-bottom: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 8px solid grey;
+  /* flex-wrap: wrap; */
+}
+
+/*左半邊*/
+.introductionDiv {
+  padding: 0 0 0 80px;
+}
+
+.introductionDiv h1 {
+  color: white;
+  font-size: 3rem;
+  display: inline-block;
+}
+
+.introductionDiv h2 {
+  color: white;
+  margin: 0 0 10px;
+}
+
+/*右半邊*/
+
+.tvAndVideo {
+  padding: 0 80px 0 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tvImg {
+  width: 392px;
+  height: 290px;
+}
+
+.videoLawyer {
+  width: 430px;
+  height: 162px;
+  position: absolute;
+  z-index: -10;
+}
+
+@media (min-width: 1400px) {
+  .wrapperDiv {
+    margin-top: 0px;
+    padding: 141px 80px;
+  }
+  /*左*/
+  .introductionDiv h1 {
+    font-size: 70px;
+  }
+  .introductionDiv h2 {
+    font-size: 50px;
+  }
+  /*右*/
+  .tvImg {
+    width: 670px;
+    height: 510px;
+  }
+  .videoLawyer {
+    width: 630px;
+    height: 355px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapperDiv {
+  
+    padding: 131px 40px;
+  }
+  /*左*/
+  .introductionDiv h1 {
+    font-size: 2.5rem;
+  }
+  .introductionDiv h2 {
+    font-size: 1.5rem;
+  }
+
+  /*右*/
+  .tvAndVideo {
+    margin-left: 60px;
+  }
+  .tvImg {
+    width: 380px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapperDiv {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 91px 80px 90px;
+  }
+  /*左*/
+  .introductionDiv {
+    padding: 0 0 0 0px;
+  }
+  /*右*/
+  .tvAndVideo {
+    margin-left: 0px;
+    padding:0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapperDiv {
+    padding: 65px 45px 66px;
+    margin: 0;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .introductionDiv {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapperDiv {
+    padding: 43px 50px;
+  }
+  /*左*/
+  .introductionDiv h1 {
+    font-size: 2rem;
+  }
+  .introductionDiv h2 {
+    font-size: 1.2rem;
+  }
+  /*右*/
+  .tvAndVideo {
+    margin-left: 0px;
+    padding: 20px 40px 20px;
+  }
+  .tvImg {
+    /* width: 380px; */
+    width: 300px;
+    height: 280px;
+  }
+  .videoLawyer {
+    width: 380px;
+    height: 150px;
+  }
+  
+}
+
+@media (max-width: 400px){
+
+  .wrapperDiv{
+    padding: 35px 50px 61px;
+  }
+  /*左*/
+  .introductionDiv h1 {
+    font-size: 1.5rem;
+  }
+  .introductionDiv h2 {
+    font-size: 1.2rem;
+  }
+  /*右*/
+  .tvAndVideo {
+    padding: 0px 40px 0px;
+  }
+} 

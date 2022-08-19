@@ -1,0 +1,246 @@
+.downloadFunctionPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 61px 80px;
+  border-bottom: 8px solid grey;
+  /* flex-wrap: wrap; */
+}
+
+/*左半邊*/
+.imgs {
+  display: flex;
+  justify-content: center;
+}
+
+.phonePhoto {
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  z-index: -10;
+}
+
+.fixedDiv {
+  padding-top: 280px;
+}
+
+.movieandAnimation {
+  display: flex;
+  height: 90px;
+  width: 300px;
+  border: solid 3px grey;
+  border-radius: 10px;
+  background-color: black;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.moiveandDownloadingStatus {
+  display: flex;
+  justify-content: center;
+}
+
+.downloadingExplaination {
+  margin-left: 20px;
+  padding: 10px 0px;
+}
+
+.movieTitle {
+  color: white;
+  margin: 0;
+  font-size: 15px;
+}
+.movieDownloading {
+  color: #0071eb;
+  margin: 0;
+  font-size: 15px;
+}
+
+.downloadIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  align-self: center;
+}
+
+/*右半邊*/
+
+.explainationPart {
+  margin-left: 80px;
+}
+
+.downloadFunctionPartExplainationH1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.downloadFunctionPartExplainationH2 {
+  color: white;
+}
+
+@media (min-width: 1400px) {
+  .downloadFunctionPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 141px 80px;
+  }
+  /*左*/
+  .fixedDiv {
+    padding-top: 380px;
+  }
+
+  .movieandAnimation {
+    height: 130px;
+    width: 400px;
+  }
+
+  .phonePhoto {
+    height: 500px;
+    width: 600px;
+  }
+
+  .movieTitle {
+    font-size: 20px;
+  }
+  .movieDownloading {
+    font-size: 20px;
+  }
+
+  .downloadingExplaination {
+    margin-left: 20px;
+    padding: 30px 20px 30px 0px;
+  }
+
+  .downloadIcon {
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+  }
+
+  /*右*/
+  .downloadFunctionPartExplainationH1 {
+    color: white;
+    font-size: 70px;
+  }
+
+  .downloadFunctionPartExplainationH2 {
+    color: white;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .downloadFunctionPart {
+    padding: 86px 80px;
+    /* flex-wrap: wrap; */
+  }
+  /*左*/
+  /*右*/
+  .downloadFunctionPartExplainationH1 {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .downloadFunctionPartExplainationH2 {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .downloadFunctionPart {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    padding: 57px 80px 56px;
+  }
+  /*左*/
+  .downloadingExplaination{
+    text-align: left;
+  }
+  /*右*/
+  .explainationPart {
+    margin-left: 0px;
+  }
+  
+}
+@media (max-width: 768px) {
+  .downloadFunctionPart {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    padding: 52px 80px 51px;
+  }
+  /*左*/
+  .fixedDiv {
+    padding-top: 250px;
+  }
+  .movieandAnimation {
+    height: 80px;
+    width: 300px;
+  }
+
+  .phonePhoto {
+    height: 350px;
+    width: 450px;
+  }
+
+  /*右*/
+
+  .explainationPart {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .downloadFunctionPart {
+    padding: 62px 50px 63px;
+  }
+  /*左*/
+  .fixedDiv {
+    padding-top: 220px;
+  }
+  .movieandAnimation {
+    height: 80px;
+    width: 250px;
+  }
+
+  .phonePhoto {
+    height: 300px;
+    width: 380px;
+  }
+  
+  .movieImgStrangeThing{ 
+   max-width: 25%;  
+  
+  }
+
+  /*右*/
+  .downloadFunctionPartExplainationH1 {
+    font-size: 2rem;
+  }
+
+  .downloadFunctionPartExplainationH2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .downloadFunctionPart {
+    padding: 44px 50px 45px;
+  }
+  /*左*/
+
+  .downloadingExplaination h3 {
+    font-size: 1rem;
+  }
+
+  /*右*/
+  .downloadFunctionPartExplainationH1 {
+    font-size: 1.5rem;
+  }
+
+  .downloadFunctionPartExplainationH2 {
+    font-size: 1.2rem;
+  }
+}

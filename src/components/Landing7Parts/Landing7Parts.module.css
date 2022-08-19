@@ -1,0 +1,139 @@
+.question1QuestionandAnswerDiv3 {
+  margin-top: 8px;
+}
+
+.question1AndControlButtonDiv4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #303030;
+  padding: 7.5px 0px 7.5px 30px;
+}
+
+.question1AndControlButtonDiv4 button {
+  background-color: #303030;
+  border-style: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.question1AnswerDiv4 {
+  margin-top: 2px;
+  padding: 10px 30px;
+  background: #303030;
+}
+
+.question1TitleH2 {
+  color: white;
+  text-align: left;
+  margin-left: 0;
+  font-size: 24px;
+}
+/*按鈕預定地點*/
+
+.wrapperQuestion1ButtonDiv {
+  padding: 30px;
+  cursor: pointer;
+}
+.part1controlButtonDiv {
+  background-color: white;
+  height: 2px;
+  width: 30px;
+}
+
+.part1controlButtonDiv::before {
+  content: "";
+  background-color: white;
+  height: 2px;
+  width: 30px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.question1AnswerH2 {
+  color: white;
+  /* margin:0 ; */
+}
+
+@media (min-width: 1400px) {
+  .question1TitleH2 {
+    font-size: 30px;
+  }
+  .question1AnswerH2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .question1TitleH2,
+  .question1AnswerH2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .question1TitleH2,
+  .question1AnswerH2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } 
+  .question1AndControlButtonDiv4{
+    padding: 0px 0px 0px 30px;
+  }
+  .part1controlButtonDiv{
+   width:25px ;
+  }
+  .part1controlButtonDiv::before{
+    width:25px
+  }
+
+}
+
+@media (max-width: 768px) {
+  .wrapperQuestion1ButtonDiv{
+    padding-right: 20px;
+  }
+  .question1AndControlButtonDiv4{
+    padding-left:20px
+  }
+}
+
+@media (max-width: 576px) {
+
+  .question1TitleH2,
+  .question1AnswerH2 {
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .wrapperQuestion1ButtonDiv{
+    padding:22px 20px
+  }
+  .part1controlButtonDiv{
+    width:20px ;
+   }
+   .part1controlButtonDiv::before{
+     width:20px
+   } 
+   .question1AndControlButtonDiv4{
+    padding: 0px 0px 0px 20px;
+  }
+  .question1AnswerDiv4 {
+    padding:10px 20px
+  } 
+}
+
+@media (max-width: 400px) {
+  .wrapperQuestion1ButtonDiv{
+    padding:22px 15px
+  }
+  .question1AndControlButtonDiv4{
+    padding: 0px 0px 0px 15px;
+  }
+}

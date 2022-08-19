@@ -1,0 +1,157 @@
+.Landing7QuestionsDiv1 {
+  text-align: left;
+  padding: 21px 20% 18px;
+  border-bottom: 8px solid grey  ;
+}
+
+.questionPartBigTitleH1 {
+  color: white;
+  font-size: 3.4rem;
+  text-align: center;
+  margin-bottom: 38.488px;
+}
+
+.IntroAndInputAndButtonDiv2 {
+  text-align: center;
+  margin-top: 67px;
+  margin-bottom: 47px;
+}
+
+.IntroAndInputAndButtonDiv2 h3 {
+  color: white;
+}
+.IntroAndInputAndButtonDiv2 p {
+  color: red;
+}
+.inputandButtonDiv3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inputandButtonDiv3 button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #c00404;
+  border: 1px solid #c00404;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+
+.inputandButtonDiv3 button:hover,
+.inputandButtonDiv3 button:active {
+  background-color: #dc0933;
+  border-color: #dc143c;
+}
+
+.inputandButtonDiv3 input {
+  height: 48px;
+  width: 520px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.inputandButtonDiv3 input:focus {
+  outline: none;
+  border-color: white;
+  background-color: #e0d4fd;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+@media (min-width: 1400px) {
+  .Landing7QuestionsDiv1 {
+    padding: 53px 20% 51px;
+  }
+  .questionPartBigTitleH1 {
+    font-size: 70px;
+  }
+  .IntroAndInputAndButtonDiv2 p {
+    font-size: 30px;
+  }
+  .IntroAndInputAndButtonDiv2 h3 {
+    font-size: 30px;
+  }
+  .inputandButtonDiv3 input {
+    height: 60px;
+    width: 1330px;
+    border-radius: 6px;
+    font-size: 30px;
+  }
+  .inputandButtonDiv3 button {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  .inputandButtonDiv3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Landing7QuestionsDiv1 {
+    padding: 29px 20% 26px;
+  }
+  .questionPartBigTitleH1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .Landing7QuestionsDiv1 {
+    padding: 32px 20% 29px;
+  }
+  .inputandButtonDiv3 button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Landing7QuestionsDiv1 {
+    padding: 32px 15% 29px;
+  }
+}
+
+@media (max-width: 576px) {
+  .questionPartBigTitleH1 {
+    font-size: 2rem;
+  }
+  .IntroAndInputAndButtonDiv2 h3 {
+    font-size: 1rem;
+  }
+  .Landing7QuestionsDiv1 {
+    padding: 32px 15% 11px;
+  }
+  .IntroAndInputAndButtonDiv2 {
+    text-align: center;
+    margin-top: 39px;
+    margin-bottom: 19px;
+  }
+
+  .inputandButtonDiv3 button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .Landing7QuestionsDiv1 {
+    padding: 47px 9% 26px;
+  }
+  .questionPartBigTitleH1 {
+    font-size: 1.5rem;
+    line-height: 1;
+  } 
+}

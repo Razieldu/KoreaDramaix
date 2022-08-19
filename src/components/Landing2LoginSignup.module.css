@@ -1,0 +1,184 @@
+.loginWrapper {
+  padding: 0px 140px 72px;
+}
+
+.signupContent {
+  padding: 60px 150px;
+  text-align: center;
+}
+
+.signupContent h1,
+.signupContent h2,
+.signupContent h3 {
+  color: white;
+  margin: 0 0 10px;
+}
+
+.signupContent h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.signupContent h3 {
+  margin-top: 50px;
+}
+
+.signupContent button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #c00404;
+  border: 1px solid #c00404;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+
+.signupContent button:hover,
+.signupContent button:active {
+  background-color: #dc0933;
+  border-color: #dc143c;
+}
+
+.signupContent p {
+  color: red;
+}
+
+.signupContent input {
+  height: 48px;
+  width: 520px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.inputAndButtonDiv input:focus {
+  outline: none;
+  border-color: white;
+  background-color: #e0d4fd;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.inputAndButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+
+
+@media (min-width: 1400px) {
+  .loginWrapper {
+    padding: 70px 100px 110px;
+  }
+
+  .signupContent h1 {
+    font-size: 70px;
+  }
+  .signupContent h2 {
+    font-size: 50px;
+  }
+  .signupContent h3 {
+    font-size: 30px;
+  }
+  .inputAndButtonDiv input {
+    height: 60px;
+    width: 1330px;
+    border-radius: 6px;
+    font-size: 30px;
+  }
+  .inputAndButtonDiv button {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  .loginWrapper p{
+   font-size: 30px;
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .loginWrapper {
+    padding: 20px 140px 26px;
+  }
+  .signupContent button {
+    margin-top: 20px;
+  }
+  .signupContent h1 {
+    font-size: 2.5rem;
+  }
+  .signupContent h2{
+  font-size: 1.5rem;
+}
+}
+@media (max-width: 992px) {
+  .loginWrapper {
+    padding: 0px 40px 49px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginWrapper {
+    padding: 60px 80px 109px;
+  }
+
+  .signupContent {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .loginWrapper {
+    padding: 20px 0px 80px;
+  }
+
+  .signupContent h1 {
+    font-size: 2rem;
+  }
+  .signupContent h3 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .signupContent {
+    padding: 40px 50px 20px;
+    text-align: center;
+  }
+  .signupContent button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .loginWrapper {
+    padding: 67px 20px 65px;
+  }
+  .signupContent {
+    padding: 20px 20px 20px;
+    text-align: center;
+  }
+
+  .signupContent h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .signupContent h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .signupContent h3 {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,98 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+/*左半邊*/
+.text {
+  color: red;
+  font-weight: 700;
+}
+
+/*右半邊*/
+.loginButtonAndSelect {
+  display: flex;
+  align-items: center;
+  padding-right: 0px;
+}
+
+.navImg {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.navigation button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #c00404;
+  border: 1px solid #c00404;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+}
+
+.navigation button:hover,
+.navigation button:active {
+  background-color: #dc0933;
+  border-color: #DC143C;
+}
+
+
+@media (min-width: 1400px) {
+  .navigation {
+    padding: 20px 40px;
+  }
+  /*左半邊*/
+  .navigation h1 {
+    font-size: 50px;
+  }
+  /*右半邊*/
+  .navImg {
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+  }
+
+  .navigation select {
+    font-size: 24px;
+  }
+  .navigation button {
+    padding: 10px 30px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .navigation {
+    padding: 10px 15px;
+  }
+   /*左半邊*/
+  .navigation h1 {
+    font-size: 1.2rem;
+    margin-right: 20px;
+  }
+  /*右半邊*/
+  ul {
+    padding-left: 10px;
+  }
+  .loginButtonAndSelect button {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+  }
+}
