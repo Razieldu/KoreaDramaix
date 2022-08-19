@@ -157,6 +157,8 @@
   /*左*/
   .downloadingExplaination{
     text-align: left;
+    margin-top :auto;
+    margin-bottom: auto;
   }
   /*右*/
   .explainationPart {
