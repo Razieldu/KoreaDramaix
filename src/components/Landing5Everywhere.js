@@ -13,7 +13,7 @@ const Landing5Everywhere = () => {
       </div>
       <div className={classes.devicesDiv2Right}>
         <img className={classes.devicesImg3} src={devicesPhoto}></img>
-        <video className={classes.landing5Video3} autoPlay muted loop>
+        <video className={classes.landing5Video3} autoPlay muted loop playsInline>
           <source src={landing5Video} type="video/mp4" />
         </video>
       </div>

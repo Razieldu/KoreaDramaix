@@ -13,7 +13,7 @@ const Landing3Function = () => {
       </div>
       <div className={classes.tvAndVideo}>
         <img className={classes.tvImg} src={tv}></img>
-        <video className={classes.videoLawyer} autoPlay  muted loop>
+        <video className={classes.videoLawyer} autoPlay playsInline muted loop>
           <source src={lawyerVideo} type="video/mp4" />
         </video>
       </div>
