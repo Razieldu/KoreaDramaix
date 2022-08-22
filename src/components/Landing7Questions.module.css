@@ -50,6 +50,7 @@
   width: 520px;
   border-radius: 6px;
   font-size: 20px;
+  padding:0px 10px
 }
 
 .inputIsInvalidDiv3 {
@@ -79,6 +80,25 @@
   background-color: #fbe8d2;
 }
 
+.inputAndSpanDiv4 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.inputPlaceHolderSpan {
+  position: absolute;
+  color: grey;
+  left: 10px;
+  transition: 0.25s;
+}
+
+.inputAndSpanDiv4 input:focus~span,
+.inputAndSpanDiv4 input:valid~span{
+  transform: translateY(-16px) translateX(-13.5px) scale(0.7);
+  color: grey;
+  font-weight: 700;
+}
+
 @media (min-width: 1400px) {
   .Landing7QuestionsDiv1 {
     padding: 53px 20% 51px;
@@ -93,7 +113,7 @@
     font-size: 30px;
   }
   .inputandButtonDiv3 input {
-    height: 60px;
+    height: 70px;
     width: 1330px;
     border-radius: 6px;
     font-size: 30px;
@@ -107,6 +127,19 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+  .inputPlaceHolderSpan {
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    left: 10px;
+  }
+  
+  .inputAndSpanDiv4 input:focus~span,
+  .inputAndSpanDiv4 input:valid~span{
+    transform: translateY(-24px) translateX(-50px) scale(0.5);
+    color: grey;
+    font-weight: 700;
   }
 }
 
@@ -134,7 +167,6 @@
 }
 
 @media (max-width: 576px) {
-
   .questionPartBigTitleH1 {
     font-size: 2rem;
   }
@@ -154,11 +186,16 @@
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
-  .inputIsInvalidDiv3{
+  .inputIsInvalidDiv3 {
     padding-bottom: 20px;
   }
-  .inputIsInvalidDiv3 p{
+  .inputIsInvalidDiv3 p {
     margin-top: 10px;
+  }
+
+  .inputandButtonDiv3 input{
+    font-size: 15px;
+    width: 350px;
   }
 }
 

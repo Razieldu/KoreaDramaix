@@ -88,12 +88,16 @@ const Landing7Questions = () => {
         <form onSubmit={submitHandler}>
           <h3>{ctx.landing7H3Content}</h3>
           <div className={conditionCssClasses}>
-            <input
-              onChange={emailInputChangeHandler}
-              onBlur={emailInputIsTouchedHandler}
-              value={emailInputValue}
-              type="email"
-            />
+            <div className={classes.inputAndSpanDiv4}>
+              <input
+                onChange={emailInputChangeHandler}
+                onBlur={emailInputIsTouchedHandler}
+                value={emailInputValue}
+                type="text"
+                required
+              />
+              <span className={classes.inputPlaceHolderSpan}>{ctx.landing7SpanContent}</span>
+            </div>
             <button disabled={!formIsValid}>{ctx.landing7ButtonContent}</button>
           </div>
           <div className={classes.inputIsInvalidDiv3}>

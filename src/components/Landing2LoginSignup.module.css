@@ -40,19 +40,19 @@
   border-color: #dc143c;
 }
 
-
- .signupContent input {
+.signupContent input {
   height: 48px;
   width: 520px;
   border-radius: 6px;
-  font-size: 20px;
-} 
+  font-size: 15px;
+  padding: 0px 10px;
+}
 
 .inputAndButtonDiv input:focus {
   outline: none;
   border-color: white;
   background-color: #e0d4fd;
-} 
+}
 
 .invalid input {
   border: 1px solid #b40e0e;
@@ -62,7 +62,7 @@
 .invalid input:focus {
   border-color: #ff8800;
   background-color: #fbe8d2;
-} 
+}
 
 .inputAndButtonDiv {
   display: flex;
@@ -70,20 +70,39 @@
   justify-content: center;
   margin-top: 15px;
   flex-wrap: wrap;
-} 
+}
 
-.inputIsInvalidDiv{
+.inputIsInvalidDiv {
   display: flex;
   justify-content: center;
- 
 }
 
 .inputIsInvalidDiv p {
   color: red;
-  position:absolute;
+  position: absolute;
   z-index: 2;
 }
 
+.inputAndSpanDiv {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.placeholderSpan {
+  color: grey;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  transition: 0.25s;
+}
+
+.inputAndSpanDiv input:valid ~ span,
+.inputAndSpanDiv input:focus ~ span {
+  transform: translateY(-16px) translateX(-13.5px) scale(0.7);
+  color: grey;
+  font-weight: 700;
+}
 
 @media (min-width: 1400px) {
   .loginWrapper {
@@ -100,7 +119,7 @@
     font-size: 30px;
   }
   .inputAndButtonDiv input {
-    height: 60px;
+    height: 70px;
     width: 1330px;
     border-radius: 6px;
     font-size: 30px;
@@ -109,9 +128,22 @@
     margin-top: 30px;
     font-size: 40px;
   }
-  .inputIsInvalidDiv p{
-   font-size: 30px;
-
+  .inputIsInvalidDiv p {
+    font-size: 30px;
+  }
+  .placeholderSpan {
+    color: grey;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    font-size: 30px;
+  
+  }
+  .inputAndSpanDiv input:valid ~ span,
+  .inputAndSpanDiv input:focus ~ span {
+    transform: translateY(-24px) translateX(-50px) scale(0.5);
+    color: grey;
+    font-weight: 700;
   }
 }
 
@@ -125,9 +157,9 @@
   .signupContent h1 {
     font-size: 2.5rem;
   }
-  .signupContent h2{
-  font-size: 1.5rem;
-}
+  .signupContent h2 {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 992px) {
   .loginWrapper {
@@ -166,6 +198,13 @@
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
+  .signupContent input {
+    height: 48px;
+    width: 350px;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 0px 10px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -189,4 +228,5 @@
     font-size: 1rem;
     line-height: 1;
   }
+
 }

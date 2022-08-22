@@ -42,12 +42,16 @@ const LandingLoginSignup = () => {
           <h2>{ctx.landing2H2Content}</h2>
           <h3>{ctx.landing2H3Content}</h3>
           <div className={cssClasses}>
+            <div className={classes.inputAndSpanDiv}>
             <input
               value={enteredEmail}
               onChange={emailChangeHandler}
               onBlur={emailIsTouchedHandler}
-              type="email"
+              required
+              type="text"
             />
+            <span className={classes.placeholderSpan}>{ctx.landing2SpanContent}</span>
+            </div>
             <button disabled={!formIsValid}>{ctx.landing2ButtonContent}</button>
           </div>
           <div className={classes.inputIsInvalidDiv}>

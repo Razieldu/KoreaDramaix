@@ -9,6 +9,7 @@ const LanguageContextApi = React.createContext({
   landing2H2Content: "",
   landing2H3Content: "",
   landing2ButtonContent: "",
+  landing2SpanContent:"",
   landing2EmailInputIsNotValidcontent: "",
   /////landing3
   landing3H1Content: "",
@@ -29,6 +30,7 @@ const LanguageContextApi = React.createContext({
   landing7TotalContent: [],
   landing7H3Content: "",
   landing7ButtonContent: "",
+  landing7SpanContent:"",
   landing7EmailInputIsNotValidcontent: "",
   ///landing8
   landing8H3Content: "",
@@ -47,6 +49,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H2Content,
     landing2H3Content,
     landing2ButtonContent,
+    landing2SpanContent,
     landing2EmailInputIsNotValidcontent,
     /////landing3
     landing3H1Content,
@@ -67,6 +70,7 @@ export const LanguageContextApiProvider = (props) => {
     landing7TotalContent,
     landing7H3Content,
     landing7ButtonContent,
+    landing7SpanContent,
     landing7EmailInputIsNotValidcontent,
     ///landing8
     landing8H3Content,
@@ -81,6 +85,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H3:
       "準備開心觀賞了嗎？請輸入您的電子郵件，以建立或重新啟用您的帳戶。",
     landing2Button: "開始使用",
+    landing2Span:"電子郵件",
     landing2InputNotValid: "請輸入有效的電子郵件地址",
     ////landing3
     landing3H1: "在電視上觀賞。",
@@ -140,6 +145,7 @@ export const LanguageContextApiProvider = (props) => {
       },
     ],
     landing7Button: "開始使用",
+    landing7Span:"電子郵件",
     landing7H3:
       "準備開心觀賞了嗎？請輸入您的電子郵件，以建立或重新啟用您的帳戶。",
     landing7EmailInputIsNotValid: "請輸入有效的電子郵件地址",
@@ -175,6 +181,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H3:
       "Ready to watch? Enter your email to create or restart your membership.",
     landing2Button: "Started",
+    landing2Span:"Email address",
     landing2InputNotValid: "Please enter a valid email address",
     ////landing3
     landing3H1: "Enjoy on your TV.",
@@ -235,6 +242,7 @@ export const LanguageContextApiProvider = (props) => {
       },
     ],
     landing7Button: "Started",
+    landing7Span:"Email address",
     landing7H3:
       "Ready to watch? Enter your email to create or restart your membership.",
     landing7EmailInputIsNotValid: "Please enter a valid email address",
@@ -269,6 +277,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H3:
       "시청할 준비가 되셨나요? 이메일을 입력하여 멤버십을 생성하거나 다시 시작하세요.",
     landing2Button: "시작됨",
+    landing2Span:"이메일 주소",
     landing2InputNotValid: "유효한 이메일 주소를 입력하세요",
     ////landing3
     landing3H1: "TV에서 즐기세요.",
@@ -328,6 +337,7 @@ export const LanguageContextApiProvider = (props) => {
       },
     ],
     landing7Button: "시작됨",
+    landing7Span:"이메일 주소",
     landing7H3:
       "시청할 준비가 되셨나요? 이메일을 입력하여 멤버십을 생성하거나 다시 시작하세요.",
     landing7EmailInputIsNotValid: "유효한 이메일 주소를 입력하세",
@@ -361,6 +371,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H2Content = chineseVersion.landing2H2;
     landing2H3Content = chineseVersion.landing2H3;
     landing2ButtonContent = chineseVersion.landing2Button;
+    landing2SpanContent = chineseVersion.landing2Span;
     landing2EmailInputIsNotValidcontent = chineseVersion.landing2InputNotValid;
     ////landing3
     landing3H1Content = chineseVersion.landing3H1;
@@ -380,6 +391,7 @@ export const LanguageContextApiProvider = (props) => {
     landing7TotalContent = chineseVersion.landing7TotalContentArray;
     landing7TitleContent = chineseVersion.landing7Title;
     landing7ButtonContent = chineseVersion.landing7Button;
+    landing7SpanContent = chineseVersion.landing7Span;
     landing7H3Content = chineseVersion.landing7H3;
     landing7EmailInputIsNotValidcontent =
       chineseVersion.landing7EmailInputIsNotValid;
@@ -394,6 +406,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H2Content = englishVersion.landing2H2;
     landing2H3Content = englishVersion.landing2H3;
     landing2ButtonContent = englishVersion.landing2Button;
+    landing2SpanContent = englishVersion.landing2Span;
     landing2EmailInputIsNotValidcontent = englishVersion.landing2InputNotValid;
     ////landing3
     landing3H1Content = englishVersion.landing3H1;
@@ -413,6 +426,7 @@ export const LanguageContextApiProvider = (props) => {
     landing7TotalContent = englishVersion.landing7TotalContentArray;
     landing7TitleContent = englishVersion.landing7Title;
     landing7ButtonContent = englishVersion.landing7Button;
+    landing7SpanContent = englishVersion.landing7Span;
     landing7H3Content = englishVersion.landing7H3;
     landing7EmailInputIsNotValidcontent =
       englishVersion.landing7EmailInputIsNotValid;
@@ -426,6 +440,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H2Content = koreaVersion.landing2H2;
     landing2H3Content = koreaVersion.landing2H3;
     landing2ButtonContent = koreaVersion.landing2Button;
+    landing2SpanContent = koreaVersion.landing2Span;
     landing2EmailInputIsNotValidcontent = koreaVersion.landing2InputNotValid;
     ////landing3
     landing3H1Content = koreaVersion.landing3H1;
@@ -445,6 +460,7 @@ export const LanguageContextApiProvider = (props) => {
     landing7TitleContent = koreaVersion.landing7Title;
     landing7TotalContent = koreaVersion.landing7TotalContentArray;
     landing7ButtonContent = koreaVersion.landing7Button;
+    landing7SpanContent = koreaVersion.landing7Span;
     landing7H3Content = koreaVersion.landing7H3;
     landing7EmailInputIsNotValidcontent =
       koreaVersion.landing7EmailInputIsNotValid;
@@ -463,6 +479,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H2Content,
     landing2H3Content,
     landing2ButtonContent,
+    landing2SpanContent,
     landing2EmailInputIsNotValidcontent,
     ////landing3
     landing3H1Content,
@@ -482,6 +499,7 @@ export const LanguageContextApiProvider = (props) => {
     landing7TitleContent,
     landing7TotalContent,
     landing7ButtonContent,
+    landing7SpanContent,
     landing7H3Content,
     landing7EmailInputIsNotValidcontent,
     ///landing8
