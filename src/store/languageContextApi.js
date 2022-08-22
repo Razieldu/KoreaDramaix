@@ -267,7 +267,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H1: "무제한 영화, TV 프로그램 등.",
     landing2H2: "어디서나 시청하세요. 언제든지 취소.",
     landing2H3:
-      "시청할 준비가 되셨나요? 이메일을 입력하여 멤버십을 생성하거나 다시 시작하세요..",
+      "시청할 준비가 되셨나요? 이메일을 입력하여 멤버십을 생성하거나 다시 시작하세요.",
     landing2Button: "시작됨",
     landing2InputNotValid: "유효한 이메일 주소를 입력하세요",
     ////landing3

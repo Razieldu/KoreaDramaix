@@ -96,9 +96,11 @@ const Landing7Questions = () => {
             />
             <button disabled={!formIsValid}>{ctx.landing7ButtonContent}</button>
           </div>
-          {emailInputHasError && (
-            <p>{ctx.landing7EmailInputIsNotValidcontent}</p>
-          )}
+          <div className={classes.inputIsInvalidDiv3}>
+            {emailInputHasError && (
+              <p>{ctx.landing7EmailInputIsNotValidcontent}</p>
+            )}
+          </div>
         </form>
       </div>
     </div>

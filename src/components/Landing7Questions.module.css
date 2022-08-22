@@ -1,7 +1,7 @@
 .Landing7QuestionsDiv1 {
   text-align: left;
   padding: 21px 20% 18px;
-  border-bottom: 8px solid grey  ;
+  border-bottom: 8px solid grey;
 }
 
 .questionPartBigTitleH1 {
@@ -20,9 +20,7 @@
 .IntroAndInputAndButtonDiv2 h3 {
   color: white;
 }
-.IntroAndInputAndButtonDiv2 p {
-  color: red;
-}
+
 .inputandButtonDiv3 {
   display: flex;
   justify-content: center;
@@ -54,6 +52,17 @@
   font-size: 20px;
 }
 
+.inputIsInvalidDiv3 {
+  display: flex;
+  justify-content: center;
+}
+
+.inputIsInvalidDiv3 p {
+  color: red;
+  position: absolute;
+  z-index: 2;
+}
+
 .inputandButtonDiv3 input:focus {
   outline: none;
   border-color: white;
@@ -77,7 +86,7 @@
   .questionPartBigTitleH1 {
     font-size: 70px;
   }
-  .IntroAndInputAndButtonDiv2 p {
+  .inputIsInvalidDiv3 p {
     font-size: 30px;
   }
   .IntroAndInputAndButtonDiv2 h3 {
@@ -125,6 +134,7 @@
 }
 
 @media (max-width: 576px) {
+
   .questionPartBigTitleH1 {
     font-size: 2rem;
   }
@@ -144,6 +154,12 @@
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
+  .inputIsInvalidDiv3{
+    padding-bottom: 20px;
+  }
+  .inputIsInvalidDiv3 p{
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -153,5 +169,5 @@
   .questionPartBigTitleH1 {
     font-size: 1.5rem;
     line-height: 1;
-  } 
+  }
 }

@@ -1,10 +1,9 @@
 import classes from "./Landing2LoginSignup.module.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import LanguageContextApi from "../store/languageContextApi";
-import CustomInputIsValidHandler from "../customHooks/CustomInputIsValidHandler"
+import CustomInputIsValidHandler from "../customHooks/CustomInputIsValidHandler";
 
 const LandingLoginSignup = () => {
-
   const ctx = useContext(LanguageContextApi);
 
   const {
@@ -51,7 +50,13 @@ const LandingLoginSignup = () => {
             />
             <button disabled={!formIsValid}>{ctx.landing2ButtonContent}</button>
           </div>
-          {emailhasError && <p>{ctx.landing2EmailInputIsNotValidcontent}</p>}
+          <div className={classes.inputIsInvalidDiv}>
+            {emailhasError && (
+              <p className={classes.invalidInputP}>
+                {ctx.landing2EmailInputIsNotValidcontent}
+              </p>
+            )}
+          </div>
         </form>
       </div>
     </div>

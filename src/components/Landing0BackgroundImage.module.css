@@ -34,6 +34,7 @@
   .headerBackground,
   .koreaBackground {
     height: 650px;
+    object-fit:cover;
   }
   
 }
@@ -49,7 +50,7 @@
   .headerBackground,
   .koreaBackground {
     height: 550px;
-   
+ 
   }
 }
 

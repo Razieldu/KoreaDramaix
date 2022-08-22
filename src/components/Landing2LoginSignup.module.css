@@ -40,22 +40,19 @@
   border-color: #dc143c;
 }
 
-.signupContent p {
-  color: red;
-}
 
-.signupContent input {
+ .signupContent input {
   height: 48px;
   width: 520px;
   border-radius: 6px;
   font-size: 20px;
-}
+} 
 
 .inputAndButtonDiv input:focus {
   outline: none;
   border-color: white;
   background-color: #e0d4fd;
-}
+} 
 
 .invalid input {
   border: 1px solid #b40e0e;
@@ -65,7 +62,7 @@
 .invalid input:focus {
   border-color: #ff8800;
   background-color: #fbe8d2;
-}
+} 
 
 .inputAndButtonDiv {
   display: flex;
@@ -73,8 +70,19 @@
   justify-content: center;
   margin-top: 15px;
   flex-wrap: wrap;
+} 
+
+.inputIsInvalidDiv{
+  display: flex;
+  justify-content: center;
+ 
 }
 
+.inputIsInvalidDiv p {
+  color: red;
+  position:absolute;
+  z-index: 2;
+}
 
 
 @media (min-width: 1400px) {
@@ -101,7 +109,7 @@
     margin-top: 30px;
     font-size: 40px;
   }
-  .loginWrapper p{
+  .inputIsInvalidDiv p{
    font-size: 30px;
 
   }
