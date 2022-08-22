@@ -28,6 +28,8 @@
 .languageLogo {
   height: 16px;
   width: 16px;
+  border-radius: 50px;
+  border:1px transparent black
 }
 
 .bottomSelect {
