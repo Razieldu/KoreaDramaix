@@ -99,7 +99,7 @@
 
 .inputAndSpanDiv input:valid ~ span,
 .inputAndSpanDiv input:focus ~ span {
-  transform: translateY(-16px) translateX(-13.5px) scale(0.7);
+  transform: translateY(-16px) translateX(-10.5px) scale(0.7);
   color: grey;
   font-weight: 700;
 }
