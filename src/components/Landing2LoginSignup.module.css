@@ -137,11 +137,10 @@
     pointer-events: none;
     left: 10px;
     font-size: 30px;
-  
   }
   .inputAndSpanDiv input:valid ~ span,
   .inputAndSpanDiv input:focus ~ span {
-    transform: translateY(-24px) translateX(-50px) scale(0.5);
+    transform: translateY(-24px) translateX(-30px) scale(0.5);
     color: grey;
     font-weight: 700;
   }
@@ -228,5 +227,10 @@
     font-size: 1rem;
     line-height: 1;
   }
-
+  .inputAndSpanDiv input:valid ~ span,
+  .inputAndSpanDiv input:focus ~ span {
+    transform: translateY(-16px) translateX(-8px) scale(0.7);
+    color: grey;
+    font-weight: 700;
+  }
 }
