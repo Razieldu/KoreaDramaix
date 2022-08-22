@@ -198,11 +198,8 @@
     padding: 0.5rem 1rem;
   }
   .signupContent input {
-    height: 48px;
     width: 350px;
-    border-radius: 6px;
     font-size: 15px;
-    padding: 0px 10px;
   }
 }
 
@@ -229,8 +226,11 @@
   }
   .inputAndSpanDiv input:valid ~ span,
   .inputAndSpanDiv input:focus ~ span {
-    transform: translateY(-16px) translateX(-8px) scale(0.7);
+    transform: translateY(-16px) translateX(-10px) scale(0.7);
     color: grey;
     font-weight: 700;
+  }
+  .signupContent input{ 
+    width: 320px;
   }
 }
