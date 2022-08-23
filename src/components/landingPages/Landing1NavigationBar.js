@@ -1,7 +1,7 @@
 import classes from "./Landing1NavigationBar.module.css";
-import earth from "../img/landing1NavEarth.png";
+import earth from "../../img/landing1NavEarth.png";
 import { useContext } from "react";
-import LanguageContextApi from "../store/languageContextApi";
+import LanguageContextApi from "../../store/languageContextApi";
 
 const Landing1NavigationBar = () => {
   const ctx = useContext(LanguageContextApi);

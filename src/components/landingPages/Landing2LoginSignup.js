@@ -1,7 +1,7 @@
 import classes from "./Landing2LoginSignup.module.css";
-import { useContext, useState } from "react";
-import LanguageContextApi from "../store/languageContextApi";
-import CustomInputIsValidHandler from "../customHooks/CustomInputIsValidHandler";
+import { useContext} from "react";
+import LanguageContextApi from "../../store/languageContextApi";
+import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
 
 const LandingLoginSignup = () => {
   const ctx = useContext(LanguageContextApi);

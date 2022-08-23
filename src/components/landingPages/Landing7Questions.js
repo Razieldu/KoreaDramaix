@@ -1,9 +1,9 @@
 import classes from "./Landing7Questions.module.css";
 import Landing7Parts from "./Landing7Parts/Landing7Parts";
 import { useContext } from "react";
-import LanguageContextApi from "../store/languageContextApi";
-import CustomInputIsValidHandler from "../customHooks/CustomInputIsValidHandler";
-import ButtonStateHelperFunction from "../customHooks/buttonStateHelperFunction";
+import LanguageContextApi from "../../store/languageContextApi";
+import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
+import ButtonStateHelperFunction from "../../customHooks/buttonStateHelperFunction";
 
 const Landing7Questions = () => {
   const {

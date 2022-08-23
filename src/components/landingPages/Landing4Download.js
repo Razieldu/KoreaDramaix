@@ -1,9 +1,9 @@
 import classes from "./Landing4Download.module.css";
-import movieImg from "../img/landing4-boxshot.png";
-import phoneImg from "../img/landing4-mobile.jpg";
-import animationIcon from "../img/landing4-download-icon.gif";
+import movieImg from "../../img/landing4-boxshot.png";
+import phoneImg from "../../img/landing4-mobile.jpg";
+import animationIcon from "../../img/landing4-download-icon.gif";
 import { useContext } from "react";
-import LanguageContextApi from "../store/languageContextApi";
+import LanguageContextApi from "../../store/languageContextApi";
 const Landing4Download = () => {
   const ctx = useContext(LanguageContextApi);
   return (
