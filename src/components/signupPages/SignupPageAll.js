@@ -23,7 +23,7 @@ const SignupPageAll = () => {
               加入 KoreaDramaix 非常簡單。
             </h1>
             <p className={classes.introP}>
-              請輸入你的Email以及密碼,馬上就能開始觀賞
+              請輸入你的Email以及密碼,馬上開始觀賞
             </p>
             {/* <p className={classes.emailTitle}>電子郵件</p> */}
             {/* <p className={classes.emailContent}>{ctxAuth.signupEmail}</p> */}

@@ -69,6 +69,9 @@ hr {
   font-size: 15px;
 }
 
+.passwordInputDiv3 input{
+margin-top: 20px;
+}
 .passwordInputDiv3 input:valid ~ span,
 .passwordInputDiv3 input:focus ~ span {
   transform: translateY(-16px) translateX(-10px) scale(0.7);
