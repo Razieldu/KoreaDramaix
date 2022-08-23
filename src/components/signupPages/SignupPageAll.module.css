@@ -55,10 +55,35 @@ hr {
   background-color: #fbe8d2;
 }
 
+/*email input setting*/
+
+.emailInputDiv3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.emailSpan {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  transition: 0.25s;
+  font-size: 15px;
+  left: 10px;
+}
+
+.emailInputDiv3 input:valid ~ span,
+.emailInputDiv3 input:focus ~ span {
+  transform: translateY(-16px) translateX(-14px) scale(0.7);
+  color: grey;
+  font-weight: 700;
+}
+
 .passwordInputDiv3 {
   display: flex;
   position: relative;
   align-items: center;
+  margin-top: 25px;
 }
 
 .passwordSpan {
@@ -69,9 +94,7 @@ hr {
   font-size: 15px;
 }
 
-.passwordInputDiv3 input{
-margin-top: 20px;
-}
+
 .passwordInputDiv3 input:valid ~ span,
 .passwordInputDiv3 input:focus ~ span {
   transform: translateY(-16px) translateX(-10px) scale(0.7);
@@ -79,15 +102,18 @@ margin-top: 20px;
   font-weight: 700;
 }
 
+
 .invalidP {
   color: red;
-  font-size: 15px;
+  font-size: 12px;
   margin-top: 0;
+  position: absolute;
 }
 
 .forgetPasswordP {
   color: #0071eb;
-  margin-bottom: 25px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .signupButton {
@@ -136,8 +162,21 @@ margin-top: 20px;
   p {
     font-size: 30px;
   }
+  .passwordInputDiv3{
+   margin-top: 40px;
+  }
+
   .passwordSpan {
     font-size: 20px;
+  }
+  .emailSpan {
+    font-size: 20px;
+  }
+  .emailInputDiv3 input:valid ~ span,
+  .emailInputDiv3 input:focus ~ span {
+    transform: translateY(-25px) translateX(-19px) scale(0.7);
+    color: grey;
+    font-weight: 700;
   }
   .passwordInputDiv3 input:valid ~ span,
   .passwordInputDiv3 input:focus ~ span {
@@ -167,26 +206,4 @@ margin-top: 20px;
   }
 }
 
-/*email input setting*/
 
-.emailInputDiv3 {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.emailSpan {
-  position: absolute;
-  left: 0;
-  pointer-events: none;
-  transition: 0.25s;
-  font-size: 15px;
-  left: 10px;
-}
-
-.emailInputDiv3 input:valid ~ span,
-.emailInputDiv3 input:focus ~ span {
-  transform: translateY(-16px) translateX(-14px) scale(0.7);
-  color: grey;
-  font-weight: 700;
-}

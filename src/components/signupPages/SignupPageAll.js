@@ -4,7 +4,7 @@ import Landing1NavigationBar from "../landingPages/Landing1NavigationBar";
 import Landing8Service from "../landingPages/Landing8Service";
 import LanguageContextApi from "../../store/languageContextApi";
 import AuthContext from "../../store/authContextApi";
-import { useContext} from "react";
+import { useContext } from "react";
 
 const SignupPageAll = () => {
   const ctxAuth = useContext(AuthContext);
@@ -36,11 +36,16 @@ const SignupPageAll = () => {
               />
               <span className={classes.emailSpan}>請輸入電子郵件</span>
             </div>
+            <div className={classes.invalidPDiv}>
+              <p className={classes.invalidP}>請輸入有效電子郵件</p>
+            </div>
             <div className={classes.passwordInputDiv3}>
               <input type="text" required />
               <span className={classes.passwordSpan}>請輸入密碼</span>
             </div>
-            {/* <p className={classes.invalidP}>請輸入有效密碼</p> */}
+            <div className={classes.invalidPDiv}>
+              <p className={classes.invalidP}>請輸入有效密碼</p>
+            </div>
           </div>
           <p className={classes.forgetPasswordP}>忘記密碼?</p>
           <button className={classes.signupButton}>註冊</button>
