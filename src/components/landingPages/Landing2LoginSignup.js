@@ -1,10 +1,13 @@
 import classes from "./Landing2LoginSignup.module.css";
-import { useContext} from "react";
+import { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 import LanguageContextApi from "../../store/languageContextApi";
+import AuthContext from "../../store/authContextApi";
 import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
 
 const LandingLoginSignup = () => {
   const ctx = useContext(LanguageContextApi);
+  const ctxAuth = useContext(AuthContext);
 
   const {
     value: enteredEmail,
@@ -26,7 +29,11 @@ const LandingLoginSignup = () => {
     formIsValid = true;
   }
 
-  const submitHandler = (event) => {
+  useEffect(() => {
+    ctxAuth.saveEmail(enteredEmail);
+  }, [enteredEmail]);
+
+  const submitHandler = async (event) => {
     event.preventDefault();
     if (!formIsValid) {
       return;
@@ -43,16 +50,22 @@ const LandingLoginSignup = () => {
           <h3>{ctx.landing2H3Content}</h3>
           <div className={cssClasses}>
             <div className={classes.inputAndSpanDiv}>
-            <input
-              value={enteredEmail}
-              onChange={emailChangeHandler}
-              onBlur={emailIsTouchedHandler}
-              required
-              type="text"
-            />
-            <span className={classes.placeholderSpan}>{ctx.landing2SpanContent}</span>
+              <input
+                value={enteredEmail}
+                onChange={emailChangeHandler}
+                onBlur={emailIsTouchedHandler}
+                required
+                type="text"
+              />
+              <span className={classes.placeholderSpan}>
+                {ctx.landing2SpanContent}
+              </span>
             </div>
-            <button disabled={!formIsValid}>{ctx.landing2ButtonContent}</button>
+            <Link to="/signup">
+              <button disabled={!formIsValid}>
+                {ctx.landing2ButtonContent}
+              </button>
+            </Link>
           </div>
           <div className={classes.inputIsInvalidDiv}>
             {emailhasError && (

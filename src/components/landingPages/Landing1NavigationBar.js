@@ -1,5 +1,6 @@
 import classes from "./Landing1NavigationBar.module.css";
-import earth from "../../img/landing1NavEarth.png";
+import earth from "../../assets/img/landing1NavEarth.png";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import LanguageContextApi from "../../store/languageContextApi";
 
@@ -10,7 +11,9 @@ const Landing1NavigationBar = () => {
   };
   return (
     <div className={classes.navigation} id="top">
-      <h1 className={classes.text}>KoreaDramaix</h1>
+      <Link style={{ textDecoration: 'none' }} to="/">
+        <h1 className={classes.text}>KoreaDramaix</h1>
+      </Link>
       <nav>
         <div className={classes.loginButtonAndSelect}>
           <img className={classes.navImg} src={earth} />
@@ -25,9 +28,9 @@ const Landing1NavigationBar = () => {
           </select>
           <ul>
             <li>
-              <a className={classes.text}>
+              <Link to="/" className={classes.text}>
                 <button>{ctx.navLoginButton}</button>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

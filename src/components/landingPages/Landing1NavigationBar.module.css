@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 40px;
+  align-items: center;
 }
 
 /*左半邊*/
@@ -22,7 +23,7 @@
   width: 16px;
   display: inline-block;
   border-radius: 50px;
-  border:1px transparent solid
+  border: 1px transparent solid;
 }
 
 ul {
@@ -43,9 +44,8 @@ ul {
 .navigation button:hover,
 .navigation button:active {
   background-color: #dc0933;
-  border-color: #DC143C;
+  border-color: #dc143c;
 }
-
 
 @media (min-width: 1400px) {
   .navigation {
@@ -84,11 +84,10 @@ ul {
   .navigation {
     padding: 10px 15px;
   }
-   /*左半邊*/
+  /*左半邊*/
   .navigation h1 {
     font-size: 1.2rem;
     margin-right: 20px;
-    align-self: center;
   }
   /*右半邊*/
   ul {

@@ -1,6 +1,6 @@
 import classes from "./Landing5Everywhere.module.css";
-import devicesPhoto from "../../img/landing5-devicePile.png";
-import landing5Video from "../../video/landing5-video.mp4";
+import devicesPhoto from "../../assets/img/landing5-devicePile.png";
+import landing5Video from "../../assets/video/landing5-video.mp4";
 import { useContext } from "react";
 import LanguageContextApi from "../../store/languageContextApi";
 const Landing5Everywhere = () => {

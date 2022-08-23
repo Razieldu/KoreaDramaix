@@ -1,9 +1,9 @@
 import classes from "./Landing0BackgroundImage.module.css";
 import { useContext } from "react";
 import LanguageContextApi from "../../store/languageContextApi";
-import backgroundChinese from "../../img/landingPagebackgroundChinese.jpg";
-import backgroundEnglish from "../../img/landingPagebackgroundEnglish.jpg";
-import backgroundKorea from "../../img/landingPagebackgroundKorea.jpg";
+import backgroundChinese from "../../assets/img/landingPagebackgroundChinese.jpg";
+import backgroundEnglish from "../../assets/img/landingPagebackgroundEnglish.jpg";
+import backgroundKorea from "../../assets/img/landingPagebackgroundKorea.jpg";
 const Landing0Background = () => {
   const ctx = useContext(LanguageContextApi);
   let background;

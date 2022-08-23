@@ -1,0 +1,19 @@
+
+.white {
+  min-height: 100vh;
+  background-color: white;
+}
+
+
+
+.black {
+  min-height: 100vh;
+  background-color: black;
+}
+
+
+.grey {
+  min-height: 100vh;
+  background-color: #737373
+}
+

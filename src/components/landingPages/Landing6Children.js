@@ -1,6 +1,6 @@
 import classes from "./Landing6Children.module.css";
-import children from "../../img/landing6Children.png";
-import childrenEnglish from "../../img/landing6ChildrenEnglish.png";
+import children from "../../assets/img/landing6Children.png";
+import childrenEnglish from "../../assets/img/landing6ChildrenEnglish.png";
 import { useContext } from "react";
 import LanguageContextApi from "../../store/languageContextApi";
 const Landing6Children = () => {

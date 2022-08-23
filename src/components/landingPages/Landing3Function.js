@@ -1,6 +1,6 @@
 import classes from "./Landing3Function.module.css";
-import tv from "../../img/landing3TvFunction.png";
-import lawyerVideo from "../../video/functionVideo.mp4";
+import tv from "../../assets/img/landing3TvFunction.png";
+import lawyerVideo from "../../assets/video/functionVideo.mp4";
 import { useContext } from "react";
 import LanguageContextApi from "../../store/languageContextApi";
 const Landing3Function = () => {

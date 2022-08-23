@@ -1,0 +1,189 @@
+hr {
+  opacity: 0.3;
+}
+
+.signupPageTotalDiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px 150px;
+}
+
+.inputDiv2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 0px 0px;
+}
+
+.introduction {
+  margin-bottom: 0px;
+}
+
+.introP {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.emailTitle {
+  margin: 0;
+}
+
+.emailContent {
+  margin-top: 0;
+  font-weight: 700;
+}
+.inputDiv2 input {
+  width: 458px;
+  height: 48px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.inputDiv2 input:focus {
+  outline: none;
+  border: 2px solid #0071eb;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.passwordInputDiv3 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.passwordSpan {
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.25s;
+  font-size: 15px;
+}
+
+.passwordInputDiv3 input:valid ~ span,
+.passwordInputDiv3 input:focus ~ span {
+  transform: translateY(-16px) translateX(-10px) scale(0.7);
+  color: grey;
+  font-weight: 700;
+}
+
+.invalidP {
+  color: red;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.forgetPasswordP {
+  color: #0071eb;
+  margin-bottom: 25px;
+}
+
+.signupButton {
+  width: 458px;
+  font: inherit;
+  cursor: pointer;
+  background-color: #c00404;
+  border: 1px solid #c00404;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+
+.signupPageTotalDiv1 button:hover,
+.signupPageTotalDiv1 button:active {
+  background-color: #dc0933;
+  border-color: #dc143c;
+}
+
+.wrapperDiv {
+  /* background-color: #e1e1e1; */
+  background-color: black;
+}
+
+@media (min-width: 1400px) {
+  .signupPageTotalDiv1 {
+    padding: 100px 0px 200px;
+  }
+
+  .introduction {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .inputDiv2 input {
+    width: 717px;
+    height: 70px;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .signupButton {
+    width: 717px;
+    padding: 10px 30px;
+    font-size: 28px;
+  }
+  p {
+    font-size: 30px;
+  }
+  .passwordSpan {
+    font-size: 20px;
+  }
+  .passwordInputDiv3 input:valid ~ span,
+  .passwordInputDiv3 input:focus ~ span {
+    transform: translateY(-25px) translateX(-14px) scale(0.7);
+    color: grey;
+    font-weight: 700;
+  }
+  .invalidP {
+    color: red;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .introduction {
+    font-size: 1.5rem;
+  }
+
+  .inputDiv2 input {
+    width: 344px;
+    height: 48px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .signupButton {
+    width: 344px;
+  }
+}
+
+/*email input setting*/
+
+.emailInputDiv3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.emailSpan {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  transition: 0.25s;
+  font-size: 15px;
+  left: 10px;
+}
+
+.emailInputDiv3 input:valid ~ span,
+.emailInputDiv3 input:focus ~ span {
+  transform: translateY(-16px) translateX(-14px) scale(0.7);
+  color: grey;
+  font-weight: 700;
+}

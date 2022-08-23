@@ -1,6 +1,6 @@
 import classes from "./Landing8Service.module.css";
 import LanguageContextApi from "../../store/languageContextApi";
-import earth from "../../img/landing1NavEarth.png";
+import earth from "../../assets/img/landing1NavEarth.png";
 import { useContext } from "react";
 const Landing8Service = () => {
   const ctx = useContext(LanguageContextApi);
