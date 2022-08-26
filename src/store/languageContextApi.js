@@ -9,7 +9,7 @@ const LanguageContextApi = React.createContext({
   landing2H2Content: "",
   landing2H3Content: "",
   landing2ButtonContent: "",
-  landing2SpanContent:"",
+  landing2SpanContent: "",
   landing2EmailInputIsNotValidcontent: "",
   /////landing3
   landing3H1Content: "",
@@ -30,11 +30,21 @@ const LanguageContextApi = React.createContext({
   landing7TotalContent: [],
   landing7H3Content: "",
   landing7ButtonContent: "",
-  landing7SpanContent:"",
+  landing7SpanContent: "",
   landing7EmailInputIsNotValidcontent: "",
   ///landing8
   landing8H3Content: "",
   landing8TotalServicesContent: {},
+  ///signupPage
+  signupPageH1Content: "",
+  signupPageIntroContent: "",
+  signupPageInputTitleContent: "",
+  signupPageEmailSpanContent: "",
+  signupPageInvalidEmailPContent: "",
+  signupPagePasswordSpanContent: "",
+  signupPageInvalidPasswordPContent: "",
+  signupPageeforgetPasswordPContent: "",
+  signupPageButtonContent: "",
   changeLanguageHandler: () => {},
 });
 export const LanguageContextApiProvider = (props) => {
@@ -74,7 +84,17 @@ export const LanguageContextApiProvider = (props) => {
     landing7EmailInputIsNotValidcontent,
     ///landing8
     landing8H3Content,
-    landing8TotalServicesContent;
+    landing8TotalServicesContent,
+    ///signupPage
+    signupPageH1Content,
+    signupPageIntroContent,
+    signupPageInputTitleContent,
+    signupPageEmailSpanContent,
+    signupPageInvalidEmailPContent,
+    signupPagePasswordSpanContent,
+    signupPageInvalidPasswordPContent,
+    signupPageeforgetPasswordPContent,
+    signupPageButtonContent;
   /////中文/////
   const chineseVersion = {
     //////nav
@@ -85,7 +105,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H3:
       "準備開心觀賞了嗎？請輸入您的電子郵件，以建立或重新啟用您的帳戶。",
     landing2Button: "開始使用",
-    landing2Span:"電子郵件",
+    landing2Span: "電子郵件",
     landing2InputNotValid: "請輸入有效的電子郵件地址",
     ////landing3
     landing3H1: "在電視上觀賞。",
@@ -145,7 +165,7 @@ export const LanguageContextApiProvider = (props) => {
       },
     ],
     landing7Button: "開始使用",
-    landing7Span:"電子郵件",
+    landing7Span: "電子郵件",
     landing7H3:
       "準備開心觀賞了嗎？請輸入您的電子郵件，以建立或重新啟用您的帳戶。",
     landing7EmailInputIsNotValid: "請輸入有效的電子郵件地址",
@@ -169,6 +189,16 @@ export const LanguageContextApiProvider = (props) => {
       title15: "獨家資訊",
       title16: "贊助我們",
     },
+    ///signupPage
+    signupPageH1: "加入KoreaDramaix 非常簡單。",
+    signupPageIntro: "請輸入您的密碼，馬上開始觀賞。",
+    signupPageInputTitle: "電子郵件",
+    signupPageEmailSpan: "電子郵件",
+    signupPageInvalidEmailP: "請輸入有效電子郵件",
+    signupPagePasswordSpan: "密碼",
+    signupPageInvalidPasswordP: "請輸入有效密碼",
+    signupPageeforgetPasswordP: "忘記密碼?",
+    signupPageButton: "註冊",
   };
 
   /////英文/////
@@ -181,7 +211,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H3:
       "Ready to watch? Enter your email to create or restart your membership.",
     landing2Button: "Started",
-    landing2Span:"Email address",
+    landing2Span: "Email address",
     landing2InputNotValid: "Please enter a valid email address",
     ////landing3
     landing3H1: "Enjoy on your TV.",
@@ -242,7 +272,7 @@ export const LanguageContextApiProvider = (props) => {
       },
     ],
     landing7Button: "Started",
-    landing7Span:"Email address",
+    landing7Span: "Email address",
     landing7H3:
       "Ready to watch? Enter your email to create or restart your membership.",
     landing7EmailInputIsNotValid: "Please enter a valid email address",
@@ -266,6 +296,16 @@ export const LanguageContextApiProvider = (props) => {
       title15: "Only on KoreaDramaix",
       title16: "Donate us",
     },
+    ///signupPage
+    signupPageH1: "Joining KoreaDramaix is easy.",
+    signupPageIntro: "Enter your password and watch in no time.",
+    signupPageInputTitle: "Email",
+    signupPageEmailSpan: "Email",
+    signupPageInvalidEmailP: "email is required",
+    signupPagePasswordSpan: "Password",
+    signupPageInvalidPasswordP: "password is required",
+    signupPageeforgetPasswordP: "forgot password?",
+    signupPageButton: "Sign up",
   };
   /////韓文/////
   const koreaVersion = {
@@ -277,7 +317,7 @@ export const LanguageContextApiProvider = (props) => {
     landing2H3:
       "시청할 준비가 되셨나요? 이메일을 입력하여 멤버십을 생성하거나 다시 시작하세요.",
     landing2Button: "시작됨",
-    landing2Span:"이메일 주소",
+    landing2Span: "이메일 주소",
     landing2InputNotValid: "유효한 이메일 주소를 입력하세요",
     ////landing3
     landing3H1: "TV에서 즐기세요.",
@@ -337,30 +377,40 @@ export const LanguageContextApiProvider = (props) => {
       },
     ],
     landing7Button: "시작됨",
-    landing7Span:"이메일 주소",
+    landing7Span: "이메일 주소",
     landing7H3:
       "시청할 준비가 되셨나요? 이메일을 입력하여 멤버십을 생성하거나 다시 시작하세요.",
     landing7EmailInputIsNotValid: "유효한 이메일 주소를 입력하세",
-     ////landing8
-     landing8H3: "질문? 문의하기.",
-     landing8TotalServices: {
-       title1: "자주하는 질문",
-       title2: "지원 센터",
-       title3: "계정",
-       title4: "미디어 센터",
-       title5: "투자자 관계",
-       title6: "채용정보",
-       title7: "시청 방법",
-       title8: "이용약관",
-       title9: "은둔",
-       title10: "쿠키 기본 설정",
-       title11: "기업 정보",
-       title12: "문의하기",
-       title13: "속도 테스트",
-       title14: "법적 고지",
-       title15: "독점 정보",
-       title16: "우리를 기부",
-     },
+    ////landing8
+    landing8H3: "질문? 문의하기.",
+    landing8TotalServices: {
+      title1: "자주하는 질문",
+      title2: "지원 센터",
+      title3: "계정",
+      title4: "미디어 센터",
+      title5: "투자자 관계",
+      title6: "채용정보",
+      title7: "시청 방법",
+      title8: "이용약관",
+      title9: "은둔",
+      title10: "쿠키 기본 설정",
+      title11: "기업 정보",
+      title12: "문의하기",
+      title13: "속도 테스트",
+      title14: "법적 고지",
+      title15: "독점 정보",
+      title16: "우리를 기부",
+    },
+    ///signupPage
+    signupPageH1: "KoreaDramaix 에 가입하는 것은 쉽습니다.",
+    signupPageIntro: "비밀번호를 입력하고 바로 시청하세요.",
+    signupPageInputTitle: "이메일",
+    signupPageEmailSpan: "이메일",
+    signupPageInvalidEmailP: "이메일이 필요합니다",
+    signupPagePasswordSpan: "비밀번호",
+    signupPageInvalidPasswordP: "비밀번호가 필요합니다",
+    signupPageeforgetPasswordP: "비밀번호를 잊으 셨나요?",
+    signupPageButton: "가입하기",
   };
 
   if (languageType === "中文") {
@@ -398,6 +448,17 @@ export const LanguageContextApiProvider = (props) => {
     ///landing8
     landing8H3Content = chineseVersion.landing8H3;
     landing8TotalServicesContent = chineseVersion.landing8TotalServices;
+    signupPageH1Content = chineseVersion.signupPageH1;
+    signupPageIntroContent = chineseVersion.signupPageIntro;
+    signupPageInputTitleContent = chineseVersion.signupPageInputTitle;
+    signupPageEmailSpanContent = chineseVersion.signupPageEmailSpan;
+    signupPageInvalidEmailPContent = chineseVersion.signupPageInvalidEmailP;
+    signupPagePasswordSpanContent = chineseVersion.signupPagePasswordSpan;
+    signupPageInvalidPasswordPContent =
+      chineseVersion.signupPageInvalidPasswordP;
+    signupPageeforgetPasswordPContent =
+      chineseVersion.signupPageeforgetPasswordP;
+    signupPageButtonContent = chineseVersion.signupPageButton;
   } else if (languageType === "English") {
     /////nave
     navLoginButton = englishVersion.navLoginButton;
@@ -433,6 +494,20 @@ export const LanguageContextApiProvider = (props) => {
     ///landing8
     landing8H3Content = englishVersion.landing8H3;
     landing8TotalServicesContent = englishVersion.landing8TotalServices;
+    ///landing8
+    landing8H3Content = englishVersion.landing8H3;
+    landing8TotalServicesContent = englishVersion.landing8TotalServices;
+    signupPageH1Content = englishVersion.signupPageH1;
+    signupPageIntroContent = englishVersion.signupPageIntro;
+    signupPageInputTitleContent = englishVersion.signupPageInputTitle;
+    signupPageEmailSpanContent = englishVersion.signupPageEmailSpan;
+    signupPageInvalidEmailPContent = englishVersion.signupPageInvalidEmailP;
+    signupPagePasswordSpanContent = englishVersion.signupPagePasswordSpan;
+    signupPageInvalidPasswordPContent =
+      englishVersion.signupPageInvalidPasswordP;
+    signupPageeforgetPasswordPContent =
+      englishVersion.signupPageeforgetPasswordP;
+    signupPageButtonContent = englishVersion.signupPageButton;
   } else if (languageType === "한국인") {
     navLoginButton = koreaVersion.navLoginButton;
     ////landing2
@@ -467,6 +542,15 @@ export const LanguageContextApiProvider = (props) => {
     ///landing8
     landing8H3Content = koreaVersion.landing8H3;
     landing8TotalServicesContent = koreaVersion.landing8TotalServices;
+    signupPageH1Content = koreaVersion.signupPageH1;
+    signupPageIntroContent = koreaVersion.signupPageIntro;
+    signupPageInputTitleContent = koreaVersion.signupPageInputTitle;
+    signupPageEmailSpanContent = koreaVersion.signupPageEmailSpan;
+    signupPageInvalidEmailPContent = koreaVersion.signupPageInvalidEmailP;
+    signupPagePasswordSpanContent = koreaVersion.signupPagePasswordSpan;
+    signupPageInvalidPasswordPContent = koreaVersion.signupPageInvalidPasswordP;
+    signupPageeforgetPasswordPContent = koreaVersion.signupPageeforgetPasswordP;
+    signupPageButtonContent = koreaVersion.signupPageButton;
   }
 
   const contextValue = {
@@ -505,6 +589,16 @@ export const LanguageContextApiProvider = (props) => {
     ///landing8
     landing8H3Content,
     landing8TotalServicesContent,
+    ///signupPage
+    signupPageH1Content,
+    signupPageIntroContent,
+    signupPageInputTitleContent,
+    signupPageEmailSpanContent,
+    signupPageInvalidEmailPContent,
+    signupPagePasswordSpanContent,
+    signupPageInvalidPasswordPContent,
+    signupPageeforgetPasswordPContent,
+    signupPageButtonContent,
   };
 
   return (

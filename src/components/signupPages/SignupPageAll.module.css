@@ -4,18 +4,16 @@ hr {
 
 .signupPageTotalDiv1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: 30px 0px 150px;
+
 }
 
 .inputDiv2 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
   padding: 0px 0px 0px;
+  max-width: 458px;
 }
+
 
 .introduction {
   margin-bottom: 0px;
@@ -148,12 +146,19 @@ hr {
     font-size: 50px;
     margin-bottom: 50px;
   }
+  .inputDiv2 {
+    padding: 0px 0px 0px;
+    max-width: 717px;
+  }
+
   .inputDiv2 input {
     width: 717px;
     height: 70px;
     font-size: 30px;
     padding: 10px;
   }
+
+    
   .signupButton {
     width: 717px;
     padding: 10px 30px;
@@ -194,7 +199,10 @@ hr {
   .introduction {
     font-size: 1.5rem;
   }
+  .inputDiv2{
+    max-width: 344px;
 
+  }
   .inputDiv2 input {
     width: 344px;
     height: 48px;
