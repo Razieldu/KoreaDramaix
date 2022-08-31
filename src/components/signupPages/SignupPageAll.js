@@ -4,16 +4,16 @@ import Landing1NavigationBar from "../landingPages/Landing1NavigationBar";
 import Landing8Service from "../landingPages/Landing8Service";
 import LanguageContextApi from "../../store/languageContextApi";
 import AuthContext from "../../store/authContextApi";
+import { LoginHelperFunction } from "../../customHooks/loginHelperFunction";
 import { useContext, useEffect } from "react";
-
 import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
+import  {useNavigate}  from "react-router-dom"
 
 let firstTimeLoading = true;
-
 const SignupPageAll = () => {
+  const navigate = useNavigate()
   const ctxAuth = useContext(AuthContext);
   const ctxLanguage = useContext(LanguageContextApi);
-
   const {
     value: emailValue,
     isvalid: emailIsValid,
@@ -31,7 +31,7 @@ const SignupPageAll = () => {
     inputChangeHandler: passwordChangeHandler,
     isTouchedHandler: passwordIsTouchedHandelr,
     resetHandler: passwordResetHandler,
-  } = CustomInputIsValidHandler((value) => value.trim().length > 7);
+  } = CustomInputIsValidHandler((value) => value.trim().length > 6);
 
   const emailCssClasses = emailHasError
     ? `${classes.invalid} ${classes.emailInputDiv3}`
@@ -67,6 +67,10 @@ const SignupPageAll = () => {
     if (!formIsValid) {
       return;
     }
+    const email = emailValue
+    const password = passwordValue
+    console.log((password))
+    LoginHelperFunction(email,password,ctxAuth,navigate)
     emailResetHandler();
     passwordResetHandler();
   };
@@ -113,6 +117,7 @@ const SignupPageAll = () => {
                 value={passwordValue}
                 onChange={passwordChangeHandler}
                 onBlur={passwordIsTouchedHandelr}
+                min="6"
               />
               <span className={classes.passwordSpan}>
                 {ctxLanguage.signupPagePasswordSpanContent}

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f793001e.chunk.css",
-    "main.js": "/static/js/main.80cf5853.chunk.js",
-    "main.js.map": "/static/js/main.80cf5853.chunk.js.map",
+    "main.css": "/static/css/main.29a074cb.chunk.css",
+    "main.js": "/static/js/main.0ef9ea35.chunk.js",
+    "main.js.map": "/static/js/main.0ef9ea35.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2bbdd306.js",
     "runtime-main.js.map": "/static/js/runtime-main.2bbdd306.js.map",
-    "static/js/2.b7780f0f.chunk.js": "/static/js/2.b7780f0f.chunk.js",
-    "static/js/2.b7780f0f.chunk.js.map": "/static/js/2.b7780f0f.chunk.js.map",
+    "static/js/2.7fa5a66c.chunk.js": "/static/js/2.7fa5a66c.chunk.js",
+    "static/js/2.7fa5a66c.chunk.js.map": "/static/js/2.7fa5a66c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f793001e.chunk.css.map": "/static/css/main.f793001e.chunk.css.map",
-    "static/js/2.b7780f0f.chunk.js.LICENSE.txt": "/static/js/2.b7780f0f.chunk.js.LICENSE.txt",
+    "static/css/main.29a074cb.chunk.css.map": "/static/css/main.29a074cb.chunk.css.map",
+    "static/js/2.7fa5a66c.chunk.js.LICENSE.txt": "/static/js/2.7fa5a66c.chunk.js.LICENSE.txt",
     "static/media/functionVideo.38ae17db.mp4": "/static/media/functionVideo.38ae17db.mp4",
     "static/media/landing1NavEarth.1d172928.png": "/static/media/landing1NavEarth.1d172928.png",
     "static/media/landing3TvFunction.0049bc70.png": "/static/media/landing3TvFunction.0049bc70.png",
@@ -22,12 +22,13 @@
     "static/media/landing6ChildrenEnglish.e93820cb.png": "/static/media/landing6ChildrenEnglish.e93820cb.png",
     "static/media/landingPagebackgroundChinese.3581a0aa.jpg": "/static/media/landingPagebackgroundChinese.3581a0aa.jpg",
     "static/media/landingPagebackgroundEnglish.9c6b8db7.jpg": "/static/media/landingPagebackgroundEnglish.9c6b8db7.jpg",
-    "static/media/landingPagebackgroundKorea.a512f36c.jpg": "/static/media/landingPagebackgroundKorea.a512f36c.jpg"
+    "static/media/landingPagebackgroundKorea.a512f36c.jpg": "/static/media/landingPagebackgroundKorea.a512f36c.jpg",
+    "static/media/TempMainPage.module.css": "/static/media/sunset.c4acf454.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2bbdd306.js",
-    "static/js/2.b7780f0f.chunk.js",
-    "static/css/main.f793001e.chunk.css",
-    "static/js/main.80cf5853.chunk.js"
+    "static/js/2.7fa5a66c.chunk.js",
+    "static/css/main.29a074cb.chunk.css",
+    "static/js/main.0ef9ea35.chunk.js"
   ]
 }

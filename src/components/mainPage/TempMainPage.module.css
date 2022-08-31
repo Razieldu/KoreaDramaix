@@ -1,0 +1,27 @@
+h1 {
+  color: white;
+  margin: 0 0 40px 0;
+}
+
+.mainpage {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: url("/src/assets/img/sunset.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  height: 100vh;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 20px;
+    margin: 50px 0 0 0;
+  }
+  .mainpage {
+    justify-content: flex-start;
+  }
+}
