@@ -1,9 +1,11 @@
 import classes from "./Landing7Questions.module.css";
 import Landing7Parts from "./Landing7Parts/Landing7Parts";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import LanguageContextApi from "../../store/languageContextApi";
+import authContextApi from "../../store/authContextApi";
 import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
 import ButtonStateHelperFunction from "../../customHooks/buttonStateHelperFunction";
+import { Link } from "react-router-dom";
 
 const Landing7Questions = () => {
   const {
@@ -17,6 +19,7 @@ const Landing7Questions = () => {
   } = ButtonStateHelperFunction();
 
   const ctx = useContext(LanguageContextApi);
+  const authCtx = useContext(authContextApi);
   const contentData = ctx.landing7TotalContent;
   const {
     value: emailInputValue,
@@ -33,6 +36,10 @@ const Landing7Questions = () => {
   if (emailInputIsValid) {
     formIsValid = true;
   }
+
+  useEffect(() => {
+    authCtx.saveEmail(emailInputValue);
+  }, [emailInputValue]);
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -96,9 +103,15 @@ const Landing7Questions = () => {
                 type="text"
                 required
               />
-              <span className={classes.inputPlaceHolderSpan}>{ctx.landing7SpanContent}</span>
+              <span className={classes.inputPlaceHolderSpan}>
+                {ctx.landing7SpanContent}
+              </span>
             </div>
-            <button disabled={!formIsValid}>{ctx.landing7ButtonContent}</button>
+            <Link to="/signup">
+              <button disabled={!formIsValid}>
+                {ctx.landing7ButtonContent}
+              </button>
+            </Link>
           </div>
           <div className={classes.inputIsInvalidDiv3}>
             {emailInputHasError && (

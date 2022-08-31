@@ -5,6 +5,7 @@ import Landing8Service from "../landingPages/Landing8Service";
 import LanguageContextApi from "../../store/languageContextApi";
 import AuthContext from "../../store/authContextApi";
 import { useContext, useEffect } from "react";
+
 import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
 
 let firstTimeLoading = true;
@@ -12,6 +13,7 @@ let firstTimeLoading = true;
 const SignupPageAll = () => {
   const ctxAuth = useContext(AuthContext);
   const ctxLanguage = useContext(LanguageContextApi);
+
   const {
     value: emailValue,
     isvalid: emailIsValid,
@@ -46,6 +48,12 @@ const SignupPageAll = () => {
 
   let emailInput = ctxAuth.signupEmail;
   let newEmailInput = emailValue;
+
+  useEffect(() => {
+    if (!firstTimeLoading && ctxAuth.signupEmail.trim().length > 0) {
+      firstTimeLoading = true;
+    }
+  }, []);
 
   const change = (event) => {
     if (firstTimeLoading) {

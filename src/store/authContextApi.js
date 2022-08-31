@@ -6,6 +6,7 @@ const AuthContext = React.createContext({
   isLoggedIn: false,
   login: () => {},
   logOut: () => {},
+  loginUser:"",
   signupEmail: "",
   saveEmail:()=>{}
 });
@@ -13,6 +14,7 @@ const AuthContext = React.createContext({
 
 
 export const AuthContextProvider = (props) => {
+  const[user,setLoginuser]=useState("")
   const [email, setEmail] = useState("");
   const [token, setToken] = useState(null);
   const isLoggedIn = !!token;
@@ -36,6 +38,7 @@ export const AuthContextProvider = (props) => {
     logout: logoutHandler,
     saveEmail:emailSaveHelper,
     signupEmail: email,
+    loginUser:user
   };
 
   return (
