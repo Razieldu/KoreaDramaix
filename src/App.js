@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import SignupPage from "./Pages/SignupPage";
 import TempMainPage from "./Pages/MainPage";
@@ -12,6 +12,7 @@ function App() {
       <Route path="/signup" element={<SignupPage />}></Route>
       {authCtx.token && <Route path="/main" element={<TempMainPage />}></Route>}
       {/* {true && <Route path="/main" element={<TempMainPage />}></Route>} */}
+      <Route path="*" element={<Navigate to="/" replace />}></Route>
     </Routes>
   );
 }

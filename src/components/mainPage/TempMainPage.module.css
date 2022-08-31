@@ -14,14 +14,16 @@ h1 {
   background-size: cover;
   background-position-y: bottom;
   height: 100vh;
+  
 }
 
 @media (max-width: 576px) {
   h1 {
     font-size: 20px;
-    margin: 50px 0 0 0;
+    margin: 70px 0 0 0;
   }
   .mainpage {
     justify-content: flex-start;
+    padding:0 40px 0
   }
 }

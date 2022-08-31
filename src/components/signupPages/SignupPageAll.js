@@ -5,15 +5,16 @@ import Landing8Service from "../landingPages/Landing8Service";
 import LanguageContextApi from "../../store/languageContextApi";
 import AuthContext from "../../store/authContextApi";
 import { LoginHelperFunction } from "../../customHooks/loginHelperFunction";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
-import  {useNavigate}  from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 let firstTimeLoading = true;
 const SignupPageAll = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const ctxAuth = useContext(AuthContext);
   const ctxLanguage = useContext(LanguageContextApi);
+
   const {
     value: emailValue,
     isvalid: emailIsValid,
@@ -42,12 +43,12 @@ const SignupPageAll = () => {
     : `${classes.passwordInputDiv3}`;
 
   let formIsValid = false;
-  if (emailIsValid && passwordIsValid) {
+  if (
+    emailIsValid ||
+    (ctxAuth.signupEmail.trim().length > 0 && passwordIsValid)
+  ) {
     formIsValid = true;
   }
-
-  let emailInput = ctxAuth.signupEmail;
-  let newEmailInput = emailValue;
 
   useEffect(() => {
     if (!firstTimeLoading && ctxAuth.signupEmail.trim().length > 0) {
@@ -62,15 +63,14 @@ const SignupPageAll = () => {
     emailChangeHandler(event);
   };
 
+  let email = firstTimeLoading ? ctxAuth.signupEmail : emailValue;
+
   const formSubmitHandler = (event) => {
     event.preventDefault();
     if (!formIsValid) {
       return;
     }
-    const email = emailValue
-    const password = passwordValue
-    console.log((password))
-    LoginHelperFunction(email,password,ctxAuth,navigate)
+    LoginHelperFunction(email, passwordValue, ctxAuth, navigate);
     emailResetHandler();
     passwordResetHandler();
   };
@@ -94,7 +94,7 @@ const SignupPageAll = () => {
             <div className={emailCssClasses}>
               <input
                 type="text"
-                value={firstTimeLoading ? emailInput : newEmailInput}
+                value={firstTimeLoading ? ctxAuth.signupEmail: emailValue}
                 onChange={change}
                 onBlur={emailIsTouchedHandelr}
                 required
