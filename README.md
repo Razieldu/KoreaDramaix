@@ -1,5 +1,5 @@
-![REACT](https://img.shields.io/badge/-React-blue)
-![ReactRouter](https://img.shields.io/badge/-ReactRouter-ff69b4)
+![REACT](https://img.shields.io/badge/-React%5E18.0.0-blue)
+![ReactRouter](https://img.shields.io/badge/-React--router%5E6.3.0-blue)
 ![FIREBATH](https://img.shields.io/badge/-FirebaseAuthRESTAPI-RED)
 
 
