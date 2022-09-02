@@ -10,7 +10,7 @@ KoreaDramaix
 ## 專案敘述(Project Description)
 
 
-React,React-Router搭建，並使用firebase來hosting網頁<br>
+React, React-Router搭建，並使用firebase來hosting網頁<br>
 
 **語言切換的部分** :useContext<br>
 
