@@ -16,11 +16,11 @@ React,React-Router搭建，並使用firebase來hosting網頁<br>
 
 **常見問題區塊** :useEffect搭配useReducer<br>
 
-**Input 驗證** :使用custom hook（useReducer)來完成<br>
+**Input驗證** :使用custom hook（useReducer)來完成<br>
 
-**註冊** :firebase auth REST API
+**註冊功能** :firebase auth REST API
 
-***
+---
 
 Mainly made by react,react-router,and is host by firebase hosting functionality.<br>
 
@@ -30,10 +30,10 @@ Mainly made by react,react-router,and is host by firebase hosting functionality.
 
 **Validation on input** : with a custom hook make mainly with useReducer<br>
 
-**Signup** :firebase auth REST API
+**Signup Functionality** :firebase auth REST API
 
 
-## 網站網址(Hosting Website)
+## 專案網址(Website Address)
 
 https://korea-3beac.web.app/
 
@@ -47,6 +47,6 @@ https://korea-3beac.web.app/
 ![PROJECT PHOTO](https://github.com/Razieldu/KoreaDramaix/raw/main/projectPhoto/korea-3beac.web.app3.png)
 
 
-## 參考視頻(Project Video)
+<!-- ## 參考視頻(Project Video)
 
-待補
+待補 -->
