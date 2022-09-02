@@ -9,18 +9,28 @@ KoreaDramaix
 
 ## 專案敘述(Project Description)
 
+
 React,React-Router搭建，並使用firebase來hosting網頁<br>
+
 **語言切換的部分**:useContext<br>
+
 **常見問題區塊**:useEffect搭配useReducer<br>
+
 **Input 驗證**:使用custom hook（useReducer)來完成<br>
+
 **註冊**:firebase auth REST API
+
 
 Mainly made by react,react-router,and is host by firebase hosting functionality.<br>
 
 **Changing language**:useContext<br>
+
 **Frequently asked question part**:useEffect with useReducer<br>
+
 **Validation on input**: with a custom hook make mainly with useReducer<br>
+
 **Signup**:firebase auth REST API
+
 
 ## 網站網址(Hosting Website)
 
