@@ -40,9 +40,15 @@ https://korea-3beac.web.app/
 
 ## 參考圖片(Project Photo)
 
+### 首頁(Landing Page) 
+
 ![PROJECT PHOTO](https://github.com/Razieldu/KoreaDramaix/raw/main/projectPhoto/korea-3beac.web.app1.png)
 
+### 註冊頁面(Sign-up Page)
+
 ![PROJECT PHOTO](https://github.com/Razieldu/KoreaDramaix/raw/main/projectPhoto/korea-3beac.web.app2.png)
+
+### 主頁面(Main Page)
 
 ![PROJECT PHOTO](https://github.com/Razieldu/KoreaDramaix/raw/main/projectPhoto/korea-3beac.web.app3.png)
 
