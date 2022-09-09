@@ -3,9 +3,11 @@
   justify-content: space-between;
   padding: 10px 40px;
   align-items: center;
+
 }
 
 /*左半邊*/
+
 .text {
   color: red;
   font-weight: 700;

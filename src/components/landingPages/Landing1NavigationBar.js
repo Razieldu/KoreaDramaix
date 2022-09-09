@@ -11,7 +11,7 @@ const Landing1NavigationBar = () => {
   };
   return (
     <div className={classes.navigation} id="top">
-      <Link style={{ textDecoration: 'none' }} to="/">
+      <Link style={{ textDecoration: "none" }} to="/">
         <h1 className={classes.text}>KoreaDramaix</h1>
       </Link>
       <nav>

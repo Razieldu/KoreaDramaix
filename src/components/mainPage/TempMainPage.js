@@ -7,8 +7,10 @@ function TempMainPage() {
 
   return (
     <div className={classes.mainpage}>
-      <h1>歡迎以{ctx.loginUser}的身分註冊為新成員</h1>
-      <h1>主要頁面建構中...</h1>
+      <h1 className={classes.tempH1}>
+        歡迎以{ctx.loginUser}的身分註冊為新成員
+      </h1>
+      <h1 className={classes.tempH1}>主要頁面建構中...</h1>
     </div>
   );
 }
