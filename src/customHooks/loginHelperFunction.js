@@ -1,6 +1,6 @@
 export const LoginHelperFunction = (email, password, ctxAuth, navigate) => {
   fetch(
-    "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBGHq493VI4OOlgjWfImxYBCY34BGa-TIk",
+    "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyB3ntXWWHbLkf0huxz0dbH_8N4IFQXuqd8",
     {
       method: "POST",
       body: JSON.stringify({
