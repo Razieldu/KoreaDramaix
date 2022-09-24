@@ -5,22 +5,24 @@ import Landing8Service from "../landingPages/Landing8Service";
 import LanguageContextApi from "../../store/languageContextApi";
 import AuthContext from "../../store/authContextApi";
 import { LoginHelperFunction } from "../../customHooks/loginHelperFunction";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef } from "react";
 import CustomInputIsValidHandler from "../../customHooks/CustomInputIsValidHandler";
 import { useNavigate } from "react-router-dom";
 
 let firstTimeLoading = true;
+
 const SignupPageAll = () => {
   const navigate = useNavigate();
   const ctxAuth = useContext(AuthContext);
   const ctxLanguage = useContext(LanguageContextApi);
-
+  const emailRef = useRef();
   const {
     value: emailValue,
     isvalid: emailIsValid,
     hasError: emailHasError,
     inputChangeHandler: emailChangeHandler,
-    isTouchedHandler: emailIsTouchedHandelr,
+    isTouchedHandler: emailIsTouchedHandler,
+    blurButNoChangeHandler: emailBlurButNoChangeHandler,
     resetHandler: emailResetHandler,
   } = CustomInputIsValidHandler(
     (value) => value.trim().length > 0 && value.trim().includes("@")
@@ -43,6 +45,7 @@ const SignupPageAll = () => {
     : `${classes.passwordInputDiv3}`;
 
   let formIsValid = false;
+
   if (
     emailIsValid ||
     (ctxAuth.signupEmail.trim().length > 0 && passwordIsValid)
@@ -61,6 +64,15 @@ const SignupPageAll = () => {
       firstTimeLoading = false;
     }
     emailChangeHandler(event);
+  };
+
+  const blur = (event) => {
+    if (firstTimeLoading) {
+      emailBlurButNoChangeHandler(event);
+      emailIsTouchedHandler(event);
+    } else {
+      emailIsTouchedHandler(event);
+    }
   };
 
   let email = firstTimeLoading ? ctxAuth.signupEmail : emailValue;
@@ -94,9 +106,10 @@ const SignupPageAll = () => {
             <div className={emailCssClasses}>
               <input
                 type="text"
-                value={firstTimeLoading ? ctxAuth.signupEmail: emailValue}
+                value={email}
                 onChange={change}
-                onBlur={emailIsTouchedHandelr}
+                onBlur={blur}
+                ref={emailRef}
                 required
               />
               <span className={classes.emailSpan}>

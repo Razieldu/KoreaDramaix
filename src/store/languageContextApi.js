@@ -196,7 +196,7 @@ export const LanguageContextApiProvider = (props) => {
     signupPageEmailSpan: "電子郵件",
     signupPageInvalidEmailP: "請輸入有效電子郵件",
     signupPagePasswordSpan: "密碼",
-    signupPageInvalidPasswordP: "請輸入有效密碼",
+    signupPageInvalidPasswordP: "請輸入有效密碼,至少六位元",
     signupPageeforgetPasswordP: "忘記密碼?",
     signupPageButton: "註冊",
   };
@@ -301,9 +301,9 @@ export const LanguageContextApiProvider = (props) => {
     signupPageIntro: "Enter your password and watch in no time.",
     signupPageInputTitle: "Email",
     signupPageEmailSpan: "Email",
-    signupPageInvalidEmailP: "email is required",
+    signupPageInvalidEmailP: "Email is required",
     signupPagePasswordSpan: "Password",
-    signupPageInvalidPasswordP: "password is required",
+    signupPageInvalidPasswordP: "Please enter a valid password, at least six digits",
     signupPageeforgetPasswordP: "forgot password?",
     signupPageButton: "Sign up",
   };
@@ -408,7 +408,7 @@ export const LanguageContextApiProvider = (props) => {
     signupPageEmailSpan: "이메일",
     signupPageInvalidEmailP: "이메일이 필요합니다",
     signupPagePasswordSpan: "비밀번호",
-    signupPageInvalidPasswordP: "비밀번호가 필요합니다",
+    signupPageInvalidPasswordP: "최소 6자리의 유효한 비밀번호를 입력하세요.",
     signupPageeforgetPasswordP: "비밀번호를 잊으 셨나요?",
     signupPageButton: "가입하기",
   };
